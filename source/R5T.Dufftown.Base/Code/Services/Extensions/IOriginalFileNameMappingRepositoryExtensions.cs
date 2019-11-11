@@ -13,5 +13,13 @@ namespace R5T.Dufftown
 
             repository.Add(mapping);
         }
+
+        public static FileName GetOriginalImageFileName(this IOriginalFileNameMappingRepository repository, FileName uniqueFileName)
+        {
+            var mapping = repository.Get(uniqueFileName);
+
+            var originalFileName = mapping.OriginalFileName;
+            return originalFileName;
+        }
     }
 }
