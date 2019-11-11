@@ -12,6 +12,8 @@ namespace R5T.Dufftown
     {
         void Add(OriginalFileNameMapping mapping);
 
+        bool Exists(FileName uniqueFileName);
+
         OriginalFileNameMapping Get(FileName uniqueFileName);
 
         void Delete(FileName uniqueFileName);
