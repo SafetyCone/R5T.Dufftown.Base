@@ -1,0 +1,4 @@
+R5T.Dufftown.Base - An IOriginalFileNameMappingRepository base service definitions library for the Dufftown project.
+
+Goals
+
