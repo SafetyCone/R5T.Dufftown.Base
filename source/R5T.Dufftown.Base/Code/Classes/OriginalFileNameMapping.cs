@@ -18,9 +18,13 @@ namespace R5T.Dufftown
         #endregion
 
 
-        public FileName UniqueFileName { get; }
-        public FileName OriginalFileName { get; }
+        public FileName UniqueFileName { get; set; }
+        public FileName OriginalFileName { get; set; }
 
+
+        public OriginalFileNameMapping()
+        {
+        }
 
         public OriginalFileNameMapping(FileName uniqueFileName, FileName originalFileName)
         {
