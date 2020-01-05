@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 using R5T.Sparta;
 
@@ -10,12 +11,12 @@ namespace R5T.Dufftown
     /// </summary>
     public interface IOriginalFileNameMappingRepository
     {
-        void Add(OriginalFileNameMapping mapping);
+        Task Add(OriginalFileNameMapping mapping);
 
-        bool Exists(FileName uniqueFileName);
+        Task<bool> Exists(FileName uniqueFileName);
 
-        OriginalFileNameMapping Get(FileName uniqueFileName);
+        Task<OriginalFileNameMapping> Get(FileName uniqueFileName);
 
-        void Delete(FileName uniqueFileName);
+        Task Delete(FileName uniqueFileName);
     }
 }
